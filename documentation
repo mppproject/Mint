@@ -1,0 +1,45 @@
+/* 
+
+##     ## #### ##    ## ######## 
+###   ###  ##  ###   ##    ##    
+#### ####  ##  ####  ##    ##    
+## ### ##  ##  ## ## ##    ##    
+##     ##  ##  ##  ####    ##    
+##     ##  ##  ##   ###    ##    
+##     ## #### ##    ##    ##   
+
+an interpreter written in C
+
+[+]Author : Hamza BOURRAHIM & Jordan DAQUIN & Mathieu THIAO-LAYEL
+
+
+*/
+Documentation FR :
+
+	gcc *.c -o mint
+
+Pour utiliser Mint:
+
+_il suffit de lancer « ./mint -h » pour avoir la syntaxe .
+_pour interpreter un fichier -> « ./mint -i <nomdufichier.c> »
+
+[changelog]:
+
+_vérification de l'extension du fichier qui interprète les fichiers .c .
+_supporte le #include header , recherche du header dans le dossier /usr/include plus l’inclusion de messages d'erreurs .
+_vérification du main, si il existe ou si il est déclarer plus d’une seule fois .
+_variable globale + fonction; afffiche si il manque un ';' ou un '{}'.
+_supporte les fonctions et si un '(' est écrit sans un ')' il y a affichage du message d’erreur .
+_si une variable n'est pas déclaré , affichage d’un message d'erreur . (beta)
+_allocation de la mémoire (utilisation de calloc pour des raisons techniques).
+_pour la mémoire , il y a des tabvar et des tabfunct, ainsi que des tab pour les '{}' et '()' et '[]'.
+_affiche le nombre d’erreurs à la fin .
+_pour l'instant affiche le résultat de la fonction Printf.
+_(pour le fun) si on finit avec 0 erreurs , on va utiliser gcc pour compiler et avoir un fichier test(nombre).
+
+[A venir]:
+
+_les conditions pour les boucles .
+_fonction récursive
+_vérification des fonctions
+_autres...
